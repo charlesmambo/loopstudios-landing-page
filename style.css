@@ -1,3 +1,6 @@
+*{
+    text-decoration: none;
+}
 html{
     margin: 0;
     padding: 0;
@@ -16,6 +19,13 @@ section {
 .logo-img {
     width: 70%;
 }
+
+
+.nav-link:hover {
+    color: white !important;
+    border-bottom: 2px solid white;
+    
+    }
 li .nav-link {
     color: hsl(0, 0%, 100%);
     font-weight: 700;
@@ -57,6 +67,19 @@ li .nav-link {
     text-transform: uppercase;
 }
 
+
+.d {
+    width: 10vw;
+}
+.social-icons {
+    display: flex; 
+    flex-direction: column;
+    align-items: end;
+}
+.social-icons p{
+color: aliceblue;
+margin-top: 0.5rem;
+}
 /* CREATION SECTION */
 /* #creation {
 
@@ -97,43 +120,165 @@ li .nav-link {
 .one {
     background: url(images/desktop/image-deep-earth.jpg);
     background-repeat: no-repeat;
-    background-size: auto
+    background-size: cover;
 }
 .two {
     background: url(images/desktop/image-night-arcade.jpg);
     background-repeat: no-repeat;
-    background-size: auto
+    background-size: cover;
 }
 .three {
     background: url(images/desktop/image-soccer-team.jpg);
     background-repeat: no-repeat;
-    background-size: auto
+    background-size: cover;
 }
 .four {
     background: url(images/desktop/image-grid.jpg);
     background-repeat: no-repeat;
-    background-size: auto 
+    background-size: cover; 
 }
 .five {
     background: url(images/desktop/image-from-above.jpg);
     background-repeat: no-repeat;
-    background-size: auto
+    background-size: cover;
 }
 .six {
     background: url(images/desktop/image-pocket-borealis.jpg);
     background-repeat: no-repeat;
-    background-size: auto 
+    background-size: cover;
 }
 .seven {
     background: url(images/desktop/image-curiosity.jpg);
     background-repeat: no-repeat;
-    background-size: auto
+    background-size: cover;
 }
 .eight {
     background: url(images/desktop/image-fisheye.jpg);
     background-repeat: no-repeat;
-    background-size: auto
+    background-size: cover;
 }
+
+#footer {
+    background-color: black;
+    margin-top: 2rem;
+    }
+.footer-item a:hover {
+color: white;
+border-bottom: 2px solid white;
+padding-bottom: 0.7rem;
+}
+
+.footer-icons-container  {         
+    display: flex !important;
+    align-items: center;
+    justify-items: center;
+    gap: 1rem;
+}
+.footer-icons-container li  {         
+ list-style: none;
+}
+
+.social-icons p{
+    position: relative;
+    top: -8px;
+}
+
+.creation {
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#p-btn{
+    display: none;
+    width: 100px !important;
+    margin: 2rem auto;
+}
+
+
+
+.creation-header-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 16rem;
+}
+/* .creation-header-btn {
+    margin-top: 2rem;
+} */
+
+.one:hover,
+.two:hover,
+.three:hover,
+.four:hover,
+.five:hover,
+.six:hover,
+.seven:hover,
+.eight:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .heading-container{
+        width: 95%;
+    }
+    .creation-header-btn {
+    display: none;
+}
+
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .vr-text-container  {
+        padding: 0 1rem !important;
+        width: 95% !important;
+
+    }
+    .vr-text-container p{
+        font-size: 1.3rem;
+    }
+
+    #images { /*container */
+        margin-top: 30px;
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .img-container {
+        width: 94vw;
+        height: 350px;
+    }
+
+    #creation {
+margin-top: -90px;
+    }
+
+    .one,
+    .two,
+    .three,
+    .four,
+    .five,
+    .six,
+    .seven,
+    .eight {
+        height: 180px;
+    }
+    #p-btn{
+        display: block;
+    }
+
+    .social-icons {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+  }
 @media only screen and (max-width: 991px) {
     .vr-text-container {
         padding: 40px 0!important;
@@ -141,4 +286,22 @@ li .nav-link {
         top: 0px;
         right: 0px;
     }
+
+    .footer-sub {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-logo {
+       margin-bottom: 1rem;
+    }
+    .footer-logo-img {
+        display: block;
+        margin: 0 auto;
+    } 
+
+
   }
+
